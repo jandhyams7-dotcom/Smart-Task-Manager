@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Smart Task Manager</h1>
+            <p>Plan your day, one task at a time.</p>
+        </header>
+
+        <div class="task-input">
+            <input type="text" id="taskInput"
+                   placeholder="Enter a new task">
+            <button id="addButton">Add Task</button>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <span>Total Tasks</span>
+                <h2 id="totalCount">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <span>Pending</span>
+                <h2 id="pendingCount">0</h2>
+            </div>
+
+            <div class="stat-card">
+                <span>Completed</span>
+                <h2 id="completedCount">0</h2>
+            </div>
+        </div>
+
+        <div class="tools">
+            <input type="text" id="searchInput"
+                   placeholder="Search tasks...">
+
+            <select id="filterSelect">
+                <option value="all">All Tasks</option>
+                <option value="pending">Pending Tasks</option>
+                <option value="completed">Completed Tasks</option>
+            </select>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <p id="emptyMessage">No tasks found.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
